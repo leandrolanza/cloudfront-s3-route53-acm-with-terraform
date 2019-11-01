@@ -13,6 +13,16 @@ Esse projeto cria uma hospedagem completa para site estático, para criação de
 
 ### Configurações iniciais do terraform
 
+Para utilizar o terraform, primeiro temos que exportar os valores para as variáveis de ambiente e carregar, desta forma:
+
+```
+export AWS_ACCESS_KEY_ID=sua_access_key_id
+export AWS_SECRET_ACCESS_KEY=sua_secret_key
+export AWS_REGION=us-east-1
+```
+
+> terraform init
+
 ### Validando as alterações
 
 Para validar as alterações que serão aplicadas, basta executar o comando abaixo:
