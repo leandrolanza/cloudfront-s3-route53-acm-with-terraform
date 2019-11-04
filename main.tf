@@ -6,5 +6,5 @@ provider "aws" {
 
 module "cloudfront" {
   source = "modules/cloudfront"
-  domain = "meudominio.com.br"
+  domain = "mydomain.com.br"
 }
