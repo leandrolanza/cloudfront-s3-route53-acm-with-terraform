@@ -1,7 +1,7 @@
 variable "domain" {}
 
 variable "acl" {
-    default = "private"
+    default = "public-read"
 }
 variable "principals" {
     type = "list"

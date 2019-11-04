@@ -1,10 +1,10 @@
 resource "aws_cloudfront_distribution" "this" {
     price_class         = "${var.price_class}"
     http_version        = "${var.http_version}"
-    aliases             = ["${var.domain}", "*.${var.domain}"]
+    aliases             = ["${var.domain}"]
     default_root_object = "${var.default_root_object}"
     enabled             = true
-    comment             = "implementar"
+    comment             = "cdn-create-to-${var.domain}"
      origin {
         domain_name = "${module.s3.bucket_regional_domain_name}"
         origin_id   = "${module.s3.id}"
